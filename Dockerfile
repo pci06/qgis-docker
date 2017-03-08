@@ -11,3 +11,4 @@ RUN echo "/opt/gdal/lib" >> /etc/ld.so.conf.d/qgis.conf
 RUN echo "/opt/libkml/lib" >> /etc/ld.so.conf.d/qgis.conf
 RUN echo "/opt/libecw/lib" >> /etc/ld.so.conf.d/qgis.conf
 RUN ldconfig
+ENTRYPOINT "/opt/qgis/bin/qgis"
